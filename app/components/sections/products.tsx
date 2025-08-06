@@ -1,4 +1,5 @@
 import { Button } from "~/components/ui/button";
+import { ShutenCTA } from "~/components/ui/shuten-cta";
 
 export function ProductsSection() {
   return (
@@ -23,13 +24,9 @@ export function ProductsSection() {
               Early access by invitation only.
             </p>
             <Button asChild className="w-full">
-              <a
-                href="https://shuten.io/join"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ShutenCTA>
                 Request Access
-              </a>
+              </ShutenCTA>
             </Button>
           </div>
         </div>

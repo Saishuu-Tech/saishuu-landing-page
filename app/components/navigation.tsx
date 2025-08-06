@@ -1,4 +1,5 @@
 import { Button } from "~/components/ui/button";
+import { ShutenCTA } from "~/components/ui/shuten-cta";
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId);
@@ -44,13 +45,9 @@ export function Navigation() {
         </div>
 
         <Button asChild>
-          <a
-            href="https://shuten.io/join"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <ShutenCTA>
             Early Access
-          </a>
+          </ShutenCTA>
         </Button>
       </div>
     </nav>
