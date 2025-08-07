@@ -9,6 +9,7 @@ import {
 import type { Route } from "./+types/root";
 import "~/app.css";
 import { ThemeProvider } from "~/providers/theme-provider";
+import { AnalyticsProvider } from "~/providers/analytics-provider";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -44,6 +45,7 @@ export default function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Outlet />
+      <AnalyticsProvider />
     </ThemeProvider>
   );
 }
