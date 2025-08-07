@@ -45,9 +45,7 @@ export function Navigation() {
         </div>
 
         <Button asChild>
-          <ShutenCTA>
-            Early Access
-          </ShutenCTA>
+          <ShutenCTA>Early Access</ShutenCTA>
         </Button>
       </div>
     </nav>
