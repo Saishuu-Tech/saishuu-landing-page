@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 interface ShutenCTAProps {
   href?: string;
@@ -8,28 +8,28 @@ interface ShutenCTAProps {
   rel?: string;
 }
 
-export function ShutenCTA({ 
-  href = "https://shuten.io/join", 
-  children, 
+export function ShutenCTA({
+  href = "https://shuten.io/join",
+  children,
   className,
   target = "_blank",
-  rel = "noopener noreferrer"
+  rel = "noopener noreferrer",
 }: ShutenCTAProps) {
   const prefetchedRef = useRef(false);
 
   const handleHover = () => {
     if (prefetchedRef.current) return;
-    
+
     prefetchedRef.current = true;
-    
-    const prefetchLink = document.createElement('link');
-    prefetchLink.rel = 'prefetch';
+
+    const prefetchLink = document.createElement("link");
+    prefetchLink.rel = "prefetch";
     prefetchLink.href = href;
     document.head.appendChild(prefetchLink);
   };
 
   return (
-    <a 
+    <a
       href={href}
       className={className}
       target={target}
