@@ -43,6 +43,8 @@ function InnerLayout({
         />
         <link rel="preconnect" href="https://shuten.io" />
         <link rel="dns-prefetch" href="https://shuten.io" />
+        <link rel="prefetch" href="https://shuten.io" />
+        <link rel="prefetch" href="https://shuten.io/join" />
         <Meta />
         <Links />
       </head>
